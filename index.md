@@ -15,6 +15,7 @@ title: Kiroong Choe
 
 ## Others
 
+* Organizer of "Introduction to Qualitative Research & Practice" [Github](https://github.com/SNU-HCIL/2019-Winter-Seminar)
 * Interactive Description of Annotated Charts [[Demo]](https://javelinsman.github.io/IDAC/)
 
 # ✨ Projects
