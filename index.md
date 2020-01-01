@@ -15,7 +15,7 @@ title: Kiroong Choe
 
 ## Others
 
-* <img src="https://user-images.githubusercontent.com/6987894/71639160-c475a080-2cb4-11ea-950e-5cb7af65376e.png" width="30px"/> Organizer of "Introduction to Qualitative Research & Practice" [Github](https://github.com/SNU-HCIL/2019-Winter-Seminar)
+* <img src="https://user-images.githubusercontent.com/6987894/71639160-c475a080-2cb4-11ea-950e-5cb7af65376e.png" width="30px"/> Organizer of "Introduction to Qualitative Research & Practice" [[Github]](https://github.com/SNU-HCIL/2019-Winter-Seminar)
 * Interactive Description of Annotated Charts [[Demo]](https://javelinsman.github.io/IDAC/)
 
 # ✨ Projects
