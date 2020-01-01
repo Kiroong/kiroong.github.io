@@ -15,5 +15,6 @@
     * **[Talk/Performance 🎨]** Born Fantasy: A Lighthouse and paint [[Youtube]](https://www.youtube.com/watch?v=9GO0UYyy2C4) (Korean)
 * **[Workshop😄]** Nalida: Self-understanding Workshop [[Instagram]](https://www.instagram.com/nalida_official/) [[Facebook]](https://www.facebook.com/nalida2/) [[Side Project]](https://www.instagram.com/yeonullim/)
 * **[Cook👨‍🍳]** Bistro Eyagil [[Facebook]](https://www.facebook.com/BistroEyagil/) [[Instagram]](https://www.instagram.com/bistro_eyagil/)
-* **[Musical🎵]** Ku-Sa-Il-Saeng [[Official Page]](https://booking.naver.com/booking/12/bizes/139539) [[Making]](https://www.facebook.com/permalink.php?story_fbid=2081555158741110&id=100006599385507) [[Facebook]](https://www.facebook.com/pg/NaMooo-%EB%82%98%EC%9D%98-%EB%AC%B4%EB%8C%80%EB%A5%BC-%EA%BF%88%EA%BE%B8%EB%8B%A4-383273612123444/posts/)
-* **[Musical🎵]** Finding Mr. Destiny [[Making]](https://www.facebook.com/permalink.php?story_fbid=2018539295042697&id=100006599385507)
+* **[Musical🎵]**
+    * Ku-Sa-Il-Saeng [[Official Page]](https://booking.naver.com/booking/12/bizes/139539) [[Making]](https://www.facebook.com/permalink.php?story_fbid=2081555158741110&id=100006599385507) [[Facebook]](https://www.facebook.com/pg/NaMooo-%EB%82%98%EC%9D%98-%EB%AC%B4%EB%8C%80%EB%A5%BC-%EA%BF%88%EA%BE%B8%EB%8B%A4-383273612123444/posts/)
+    * Finding Mr. Destiny [[Making]](https://www.facebook.com/permalink.php?story_fbid=2018539295042697&id=100006599385507)
