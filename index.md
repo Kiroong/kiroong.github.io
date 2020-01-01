@@ -1,4 +1,4 @@
-# Research
+# 🎓 Research
 
 ## Accessibility
 
@@ -9,7 +9,7 @@
     * Jaeyoon Song, **Kiroong Choe**, Jaemin Jo, and Jinwook Seo
     * *poster, SIGCHI Conference on Human Factors in Computing Systems (CHI EA ’19)*
 
-# Projects
+# ✨ Projects
 
 * **[Party 🎉]** [2019 Year-End Party](javelinsman.github.io/2019-CKR-party)
     * **[Talk/Performance 🎨]** [Born Fantasy: A Lighthouse and paint](https://www.youtube.com/watch?v=9GO0UYyy2C4) (Korean)
