@@ -1,3 +1,7 @@
+---
+title: CV
+---
+
 # 🎓 Research
 
 ## Accessibility
