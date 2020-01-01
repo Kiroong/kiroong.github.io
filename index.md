@@ -1,5 +1,5 @@
 ---
-title: CV
+title: Kiroong Choe
 ---
 
 # 🎓 Research
