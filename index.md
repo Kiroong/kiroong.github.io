@@ -15,7 +15,7 @@ title: CV
 
 # ✨ Projects
 
-* **[Party🎉]** [2019 Year-end Party](javelinsman.github.io/2019-CKR-party)
+* **[Party🎉]** [2019 Year-end Party](https://javelinsman.github.io/2019-CKR-party)
     * **[Talk/Performance 🎨]** Born Fantasy: A Lighthouse and paint [[Youtube]](https://www.youtube.com/watch?v=9GO0UYyy2C4) (Korean)
 * **[Workshop😄]** Nalida: Self-understanding Workshop [[Instagram]](https://www.instagram.com/nalida_official/) [[Facebook]](https://www.facebook.com/nalida2/) [[Side Project]](https://www.instagram.com/yeonullim/)
 * **[Cook👨‍🍳]** Bistro Eyagil [[Facebook]](https://www.facebook.com/BistroEyagil/) [[Instagram]](https://www.instagram.com/bistro_eyagil/)
