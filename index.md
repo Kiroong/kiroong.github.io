@@ -20,8 +20,8 @@ title: Kiroong Choe
 
 # ✨ Projects
 
-* <img src="https://user-images.githubusercontent.com/6987894/71639160-c475a080-2cb4-11ea-950e-5cb7af65376e.png" width="30px"/> **[Party🎉]** 2019 Year-end Party [[Highlights]](https://www.facebook.com/permalink.php?story_fbid=2560897860806835&id=100006599385507)
-    * <img src="https://user-images.githubusercontent.com/6987894/71639160-c475a080-2cb4-11ea-950e-5cb7af65376e.png" width="30px"/> **[Talk/Performance 🎨]** Born Fantasy: A Lighthouse and paint [[Youtube]](https://www.youtube.com/watch?v=9GO0UYyy2C4)
+* **[Party🎉]** 2019 Year-end Party [[Highlights]](https://www.facebook.com/permalink.php?story_fbid=2560897860806835&id=100006599385507)
+    * **[Talk/Performance 🎨]** Born Fantasy: A Lighthouse and paint [[Youtube]](https://www.youtube.com/watch?v=9GO0UYyy2C4)
 * **[Workshop😄]** Nalida: Self-understanding Workshop [[Instagram]](https://www.instagram.com/nalida_official/) [[Facebook]](https://www.facebook.com/nalida2/) [[Side Project]](https://www.instagram.com/yeonullim/)
 * **[Cook👨‍🍳]** Bistro Eyagil [[Facebook]](https://www.facebook.com/BistroEyagil/) [[Instagram]](https://www.instagram.com/bistro_eyagil/)
 * **[Musical🎵]**
