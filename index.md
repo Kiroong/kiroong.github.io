@@ -2,7 +2,7 @@
 title: Kiroong Choe
 ---
 
-# 🎓 Research
+# 💡 Research
 
 ## Publications
 
@@ -16,6 +16,11 @@ title: Kiroong Choe
 ## Others
 
 * Interactive Description of Annotated Charts [[Demo]](https://javelinsman.github.io/IDAC/)
+
+# 🎓 Honours
+
+* Undergraduate Scholarship from Kwanjeong Educational Foundation(KEF)
+* Ph.D. Scholarship from Korea Foundation for Advanced Studies (KFAS)
 
 # ✨ Projects
 
