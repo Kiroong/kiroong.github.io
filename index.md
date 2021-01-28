@@ -19,7 +19,7 @@ title: Kiroong Choe
 
 # 🎓 Honours
 
-* Undergraduate Scholarship from Kwanjeong Educational Foundation(KEF)
+* Undergraduate Scholarship from Kwanjeong Educational Foundation (KEF)
 * Ph.D. Scholarship from Korea Foundation for Advanced Studies (KFAS)
 
 # ✨ Projects
