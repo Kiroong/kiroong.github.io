@@ -2,6 +2,7 @@
 ![](/spt.jfif)
 
 한국의 박사과정 학생. SNU.
+contact: krchoe@hcil.snu.ac.kr
 
 ## Research
 
