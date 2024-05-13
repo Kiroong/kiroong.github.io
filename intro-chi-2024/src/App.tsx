@@ -162,8 +162,8 @@ const App = () => {
           </div>
           <div className="py-6">
             <p className="text-sm pb-2">
-              LLM and visual communication effectively onboards people to
-              complex visualizations but may also pose risks, such as creating
+              LLM and visual communication effectively onboarded people to
+              complex visualizations but may also posed risks, such as creating
               performance illusions and reducing engagement.
             </p>
             <img
@@ -193,8 +193,8 @@ const App = () => {
           <div className="mt-4 pb-6 border-b-2">
             <p className="text-sm pb-2">
               Searching on Google Scholar often results in numerous disorganized
-              outcomes. We defined multiple metrics of relevance and combined
-              them into a unified visualization that includes rankings.
+              outcomes. We designed a unified visualization that ranks relevant
+              papers.
             </p>
             <img src={ImageP101Interface} className="w-full" />
           </div>
@@ -235,7 +235,7 @@ const App = () => {
               acted as supportive companions, boosting confidence and fostering
               a sense of agency.
             </p>
-            <img src={ImageLWResult} className="w-full max-w-[480px] mx-auto" />
+            <img src={ImageLWResult} className="w-full max-w-[350px] mx-auto" />
           </div>
         </div>
 
