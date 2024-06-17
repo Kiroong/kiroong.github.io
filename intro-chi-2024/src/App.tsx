@@ -67,7 +67,7 @@ const App = () => {
             <span className="text-gray-400">
               Eunhye Kim, Sangwon Park, Jinwook Seo
             </span>{" "}
-            (Under review; arXiv)
+            (VIS 2024 Short Paper)
           </p>
           <div className="py-6 border-b-2">
             <p className="text-sm">
@@ -131,8 +131,8 @@ const App = () => {
             understandable
           </h2>
           <h3 className="text-md font-semibold mt-4">
-            Enhancing Data Literacy On-demand: LLMs as Guides for Novices in
-            Chart Interpretation
+            <a href="https://ieeexplore.ieee.org/document/10555321">Enhancing Data Literacy On-demand: LLMs as Guides for Novices in
+            Chart Interpretation</a>
           </h3>
           <p className="text-gray-600 text-sm">
             Kiroong Choe,{" "}
@@ -140,7 +140,7 @@ const App = () => {
               Chaerin Lee, Soohyun Lee, Jiwon Song, Aeri Cho, Nam Wook Kim,
               Jinwook Seo
             </span>{" "}
-            (Upcoming to TVCG)
+            (TVCG; to be presented at VIS 2024)
           </p>
           <div className="py-6 border-b-2">
             <p className="text-sm">
