@@ -37,12 +37,12 @@ const App = () => {
             Papers Presented at VIS 2024
           </h2>
           <ul className="space-y-2">
-            <li className="flex items-center">
+            <li className="flex items-start">
               <a
                 href="http://hcil.snu.ac.kr/system/publications/pdfs/000/000/197/original/Submission_Manuscript_R1.pdf?1718443507"
-                className="flex items-center w-full hover:bg-gray-100 p-2 rounded-lg"
+                className="flex items-start w-full hover:bg-gray-100 p-2 rounded-lg"
               >
-                <div className="flex flex-col items-center justify-center w-8 mr-3">
+                <div className="flex flex-col items-center justify-start w-8 mr-3 mt-1">
                   <div className="flex items-center justify-center w-8 h-8 bg-red-500 rounded-lg mb-1">
                     <IoDocumentTextOutline className="text-white text-xl" />
                   </div>
@@ -60,12 +60,12 @@ const App = () => {
                 </div>
               </a>
             </li>
-            <li className="flex items-center mt-4">
+            <li className="flex items-start mt-4">
               <a
                 href="http://hcil.snu.ac.kr/system/publications/pdfs/000/000/198/original/vis24b-sub1173-cam-i7_%283%29.pdf?1726028942"
-                className="flex items-center w-full hover:bg-gray-100 p-2 rounded-lg"
+                className="flex items-start w-full hover:bg-gray-100 p-2 rounded-lg"
               >
-                <div className="flex flex-col items-center justify-center w-8 mr-3">
+                <div className="flex flex-col items-center justify-start w-8 mr-3 mt-1">
                   <div className="flex items-center justify-center w-8 h-8 bg-red-500 rounded-lg mb-1">
                     <IoDocumentTextOutline className="text-white text-xl" />
                   </div>
