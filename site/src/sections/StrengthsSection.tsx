@@ -63,6 +63,27 @@ const SystemCarousel = ({ systems, onImageClick, onPubClick }: SystemCarouselPro
   const current = systems[currentIndex]
   const currentDuration = current.duration
 
+  // Preload all images on mount to prevent loading delays
+  useEffect(() => {
+    systems.forEach(system => {
+      const img = new Image()
+      img.src = system.gif
+    })
+  }, [systems])
+
+  // Preload next images when index changes (backup for immediate next slides)
+  useEffect(() => {
+    const imagesToPreload = [
+      systems[(currentIndex + 1) % systems.length].gif,
+      systems[(currentIndex + 2) % systems.length].gif,
+    ]
+
+    imagesToPreload.forEach(src => {
+      const img = new Image()
+      img.src = src
+    })
+  }, [currentIndex, systems])
+
   // Auto-play functionality - only start when GIF is loaded
   useEffect(() => {
     if (!isGifLoaded) return
