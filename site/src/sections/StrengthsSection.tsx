@@ -115,13 +115,15 @@ const SystemCarousel = ({ systems, onImageClick, onPubClick }: SystemCarouselPro
 }
 
 export const StrengthsSection = ({ onImageClick, onPubClick }: StrengthsSectionProps) => {
+  const [activeTab, setActiveTab] = useState<'medical' | 'enterprise' | 'accessibility'>('medical')
+
   return (
     <section className="pt-6 pb-12 border-t">
-      <div className="max-w-full md:max-w-3xl lg:max-w-[1120px] mx-auto px-5">
+      <div className="max-w-full xs:max-w-container-xs sm:max-w-container-sm md:max-w-container-md lg:max-w-container-lg mx-auto px-5">
         <h2 className="text-xl font-bold tracking-tight text-gray-400 uppercase mb-8">STRENGTHS</h2>
 
-        {/* Desktop: 1:1 Layout */}
-        <div className="hidden lg:grid lg:grid-cols-2 lg:gap-8">
+        {/* 1:1 Layout - Mobile/xs: vertical, sm+: side by side */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
           {/* Left: Building Prototype Systems */}
           <div>
             <h3 className="text-lg font-semibold mb-2 flex items-center gap-2">
@@ -165,21 +167,80 @@ export const StrengthsSection = ({ onImageClick, onPubClick }: StrengthsSectionP
             />
           </div>
 
-          {/* Right: Domain Expert Collaboration */}
+          {/* Right: Real-World Collaborations */}
           <div>
             <h3 className="text-lg font-semibold mb-2 flex items-center gap-2">
               <span className="bg-gray-200 text-gray-700 text-sm px-2 py-0.5 rounded">2</span>
-              Domain Expert Collaboration
+              Real-World Collaborations
             </h3>
             <p className="text-gray-700 mb-4">
               <strong>Real-world work is messy, and I'm comfortable getting my hands dirty.</strong> I have collaborated with <strong>domain experts and practitioners</strong> to build meaningful products.
             </p>
 
-            <div className="space-y-3">
+            {/* Tab UI - xs/sm only */}
+            <div className="md:hidden">
+              {/* Tabs */}
+              <div className="flex gap-1">
+                <button
+                  onClick={() => setActiveTab('medical')}
+                  className={`px-3 py-1.5 text-sm font-medium rounded-t-lg border border-gray-200 transition-colors ${
+                    activeTab === 'medical'
+                      ? 'bg-gray-50 text-gray-700 border-b-gray-50'
+                      : 'bg-white text-gray-500 hover:bg-gray-50 border-b-gray-200'
+                  }`}
+                >
+                  Medical
+                </button>
+                <button
+                  onClick={() => setActiveTab('enterprise')}
+                  className={`px-3 py-1.5 text-sm font-medium rounded-t-lg border border-gray-200 transition-colors ${
+                    activeTab === 'enterprise'
+                      ? 'bg-gray-50 text-gray-700 border-b-gray-50'
+                      : 'bg-white text-gray-500 hover:bg-gray-50 border-b-gray-200'
+                  }`}
+                >
+                  Enterprise
+                </button>
+                <button
+                  onClick={() => setActiveTab('accessibility')}
+                  className={`px-3 py-1.5 text-sm font-medium rounded-t-lg border border-gray-200 transition-colors ${
+                    activeTab === 'accessibility'
+                      ? 'bg-gray-50 text-gray-700 border-b-gray-50'
+                      : 'bg-white text-gray-500 hover:bg-gray-50 border-b-gray-200'
+                  }`}
+                >
+                  Accessibility
+                </button>
+              </div>
+
+              {/* Tab Content - attached to tabs */}
+              <div className="bg-gray-50 border border-gray-200 rounded-b-lg rounded-tr-lg p-3 border-t-0">
+                {activeTab === 'medical' && (
+                  <p className="text-sm text-gray-600">
+                    <strong className="text-gray-700">In medical domain,</strong> I collaborated with <span className="border-b border-dashed border-gray-400">Seoul National University Bundang Hospital</span>. I analyzed <strong>complex and inconsistent medical record data</strong> <button onClick={() => onPubClick('pub-medicine-2022')} className="inline-flex items-center gap-0.5 text-blue-700/70 hover:text-blue-900 transition-colors">(Medicine 2022)<FiExternalLink size={10} className="inline ml-0.5" /></button>, <button onClick={() => onPubClick('pub-cesarean-2022')} className="inline-flex items-center gap-0.5 text-blue-700/70 hover:text-blue-900 transition-colors">(J Perinat Med 2022)<FiExternalLink size={10} className="inline ml-0.5" /></button>; built <strong>unified data collection platform</strong> for a 10-hospital collaborative study <button onClick={() => onPubClick('pub-jmatern-2024')} className="inline-flex items-center gap-0.5 text-blue-700/70 hover:text-blue-900 transition-colors">(J Matern Fetal Neonatal Med 2024)<FiExternalLink size={10} className="inline ml-0.5" /></button>; and contributed features to a <strong>patient care application</strong> <button onClick={() => onPubClick('pub-jmir-2023')} className="inline-flex items-center gap-0.5 text-blue-700/70 hover:text-blue-900 transition-colors">(J Med Internet Res 2023)<FiExternalLink size={10} className="inline ml-0.5" /></button>.
+                  </p>
+                )}
+
+                {activeTab === 'enterprise' && (
+                  <p className="text-sm text-gray-600">
+                    <strong className="text-gray-700">In enterprise domain,</strong> I worked on <strong>real-world data challenges</strong>: processing medical invoice pictures at <span className="border-b border-dashed border-gray-400">KYOBO Life Insurance</span> <button onClick={() => onPubClick('pub-invoice-2021')} className="inline-flex items-center gap-0.5 text-blue-700/70 hover:text-blue-900 transition-colors">(PacificVis 2021)<FiExternalLink size={10} className="inline ml-0.5" /></button> and building explainable data analysis systems for web search log datasets at <span className="border-b border-dashed border-gray-400">Naver Cloud</span> <button onClick={() => onPubClick('pub-tvcg-2025')} className="inline-flex items-center gap-0.5 text-blue-700/70 hover:text-blue-900 transition-colors">(TVCG 2025)<FiExternalLink size={10} className="inline ml-0.5" /></button>. I also investigated <strong>how AI can be integrated into real-world enterprise environments</strong> through a two-year intensive collaboration with <span className="border-b border-dashed border-gray-400">LG Electronics</span>, including contextual inquiry, AI system design and deployment, and user studies <span className="text-blue-700/70">(Working Project)</span>.
+                  </p>
+                )}
+
+                {activeTab === 'accessibility' && (
+                  <p className="text-sm text-gray-600">
+                    In my early research experience, <strong>I worked with Korean facilities serving blind and low-vision communities to understand their diverse needs.</strong> Through collaboration with staff, teachers, and students at <span className="border-b border-dashed border-gray-400">Ilsan Professional Competency Development Center</span>, <span className="border-b border-dashed border-gray-400">Hanbitt High School</span>, and <span className="border-b border-dashed border-gray-400">Siloam Center For The Blind</span>, I developed systems that support data understanding for visually impaired users <button onClick={() => onPubClick('pub-soundglance-2019')} className="inline-flex items-center gap-0.5 text-blue-700/70 hover:text-blue-900 transition-colors">(CHI EA 2019)<FiExternalLink size={10} className="inline ml-0.5" /></button>, <button onClick={() => onPubClick('pub-iss-2019')} className="inline-flex items-center gap-0.5 text-blue-700/70 hover:text-blue-900 transition-colors">(ISS Demo 2019)<FiExternalLink size={10} className="inline ml-0.5" /></button>.
+                  </p>
+                )}
+              </div>
+            </div>
+
+            {/* Card List - md/lg only */}
+            <div className="hidden md:block space-y-3">
               {/* Medical Domain */}
               <div className="bg-gray-50 border border-gray-200 rounded-lg p-3">
                 <p className="text-sm text-gray-600">
-                  <strong className="text-gray-700">In medical domain,</strong> I collaborated with <span className="border-b border-dashed border-gray-400">Seoul National University Bundang Hospital</span>. I analyzed complex and inconsistent medical record data <button onClick={() => onPubClick('pub-medicine-2022')} className="inline-flex items-center gap-0.5 text-blue-700/70 hover:text-blue-900 transition-colors">(Medicine 2022)<FiExternalLink size={10} className="inline ml-0.5" /></button>, <button onClick={() => onPubClick('pub-cesarean-2022')} className="inline-flex items-center gap-0.5 text-blue-700/70 hover:text-blue-900 transition-colors">(J Perinat Med 2022)<FiExternalLink size={10} className="inline ml-0.5" /></button>; built unified data collection platform for a 10-hospital collaborative study <button onClick={() => onPubClick('pub-jmatern-2024')} className="inline-flex items-center gap-0.5 text-blue-700/70 hover:text-blue-900 transition-colors">(J Matern Fetal Neonatal Med 2024)<FiExternalLink size={10} className="inline ml-0.5" /></button>; and contributed features to a <strong>patient care application</strong> <button onClick={() => onPubClick('pub-jmir-2023')} className="inline-flex items-center gap-0.5 text-blue-700/70 hover:text-blue-900 transition-colors">(J Med Internet Res 2023)<FiExternalLink size={10} className="inline ml-0.5" /></button>.
+                  <strong className="text-gray-700">In medical domain,</strong> I collaborated with <span className="border-b border-dashed border-gray-400">Seoul National University Bundang Hospital</span>. I analyzed <strong>complex and inconsistent medical record data</strong> <button onClick={() => onPubClick('pub-medicine-2022')} className="inline-flex items-center gap-0.5 text-blue-700/70 hover:text-blue-900 transition-colors">(Medicine 2022)<FiExternalLink size={10} className="inline ml-0.5" /></button>, <button onClick={() => onPubClick('pub-cesarean-2022')} className="inline-flex items-center gap-0.5 text-blue-700/70 hover:text-blue-900 transition-colors">(J Perinat Med 2022)<FiExternalLink size={10} className="inline ml-0.5" /></button>; built <strong>unified data collection platform</strong> for a 10-hospital collaborative study <button onClick={() => onPubClick('pub-jmatern-2024')} className="inline-flex items-center gap-0.5 text-blue-700/70 hover:text-blue-900 transition-colors">(J Matern Fetal Neonatal Med 2024)<FiExternalLink size={10} className="inline ml-0.5" /></button>; and contributed features to a <strong>patient care application</strong> <button onClick={() => onPubClick('pub-jmir-2023')} className="inline-flex items-center gap-0.5 text-blue-700/70 hover:text-blue-900 transition-colors">(J Med Internet Res 2023)<FiExternalLink size={10} className="inline ml-0.5" /></button>.
                 </p>
               </div>
 
@@ -190,7 +251,7 @@ export const StrengthsSection = ({ onImageClick, onPubClick }: StrengthsSectionP
                 </p>
               </div>
 
-              {/* Early Research */}
+              {/* Accessibility */}
               <div className="bg-gray-50 border border-gray-200 rounded-lg p-3">
                 <p className="text-sm text-gray-600">
                   In my early research experience, <strong>I worked with Korean facilities serving blind and low-vision communities to understand their diverse needs.</strong> Through collaboration with staff, teachers, and students at <span className="border-b border-dashed border-gray-400">Ilsan Professional Competency Development Center</span>, <span className="border-b border-dashed border-gray-400">Hanbitt High School</span>, and <span className="border-b border-dashed border-gray-400">Siloam Center For The Blind</span>, I developed systems that support data understanding for visually impaired users <button onClick={() => onPubClick('pub-soundglance-2019')} className="inline-flex items-center gap-0.5 text-blue-700/70 hover:text-blue-900 transition-colors">(CHI EA 2019)<FiExternalLink size={10} className="inline ml-0.5" /></button>, <button onClick={() => onPubClick('pub-iss-2019')} className="inline-flex items-center gap-0.5 text-blue-700/70 hover:text-blue-900 transition-colors">(ISS Demo 2019)<FiExternalLink size={10} className="inline ml-0.5" /></button>.
