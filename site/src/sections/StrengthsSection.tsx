@@ -92,7 +92,8 @@ const SystemCarousel = ({ systems, onImageClick, onPubClick }: SystemCarouselPro
   return (
     <div className="relative">
       <img
-        src={`${current.gif}?t=${gifKey}`}
+        key={gifKey}
+        src={current.gif}
         className="w-full rounded-lg shadow-md cursor-pointer hover:shadow-lg transition-shadow"
         alt={`${current.title} demo`}
         onClick={() => onImageClick(current.gif)}
