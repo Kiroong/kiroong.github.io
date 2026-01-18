@@ -118,7 +118,7 @@ export const StrengthsSection = ({ onImageClick, onPubClick }: StrengthsSectionP
   const [activeTab, setActiveTab] = useState<'medical' | 'enterprise' | 'accessibility'>('medical')
 
   return (
-    <section className="pt-6 pb-12 border-t">
+    <section className="pt-3 pb-12 border-t">
       <div className="max-w-full xs:max-w-container-xs sm:max-w-container-sm md:max-w-container-md lg:max-w-container-lg mx-auto px-5">
         <h2 className="text-xl font-bold tracking-tight text-gray-400 uppercase mb-8">STRENGTHS</h2>
 

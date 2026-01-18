@@ -1,10 +1,11 @@
 import { IoMailOutline } from "react-icons/io5"
-import { FiFileText, FiExternalLink } from "react-icons/fi"
+import { FiFileText } from "react-icons/fi"
+import { FaGraduationCap } from "react-icons/fa"
 import { ImageKrchoe, ImageVision, ImageVision2 } from "../data/images"
 
 export const HeroSection = () => {
   return (
-    <section className="bg-white pb-6">
+    <section className="bg-white pb-3">
       <div className="max-w-full xs:max-w-container-xs sm:max-w-container-sm md:max-w-container-md lg:max-w-container-lg mx-auto px-5 py-12">
         {/* Mobile Layout - Mobile + xs (< sm) */}
         <div className="sm:hidden">
@@ -30,7 +31,7 @@ export const HeroSection = () => {
                   <FiFileText size={14} /> CV
                 </a>
                 <a href="https://scholar.google.com/citations?user=BRZ2pMEAAAAJ" className="flex items-center gap-1.5 px-3 py-1.5 bg-gray-50 text-gray-700 rounded-full hover:bg-gray-100 transition-colors w-fit">
-                  <FiExternalLink size={14} /> Scholar
+                  <FaGraduationCap size={14} /> Scholar
                 </a>
               </div>
             </div>
@@ -97,7 +98,7 @@ export const HeroSection = () => {
                 <FiFileText size={14} /> CV
               </a>
               <a href="https://scholar.google.com/citations?user=BRZ2pMEAAAAJ" className="flex items-center gap-1.5 px-3 py-1.5 bg-gray-50 text-gray-700 rounded-full hover:bg-gray-100 transition-colors w-fit">
-                <FiExternalLink size={14} /> <span className="xs:hidden lg:inline">Google </span>Scholar
+                <FaGraduationCap size={14} /> Scholar
               </a>
             </div>
 
