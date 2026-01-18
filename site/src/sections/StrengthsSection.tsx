@@ -7,6 +7,7 @@ import {
   ImageCitenetInterface,
   GifCrosslitAnalysis,
   GifPapers101,
+  GifClustersense,
 } from "../data/images"
 
 interface StrengthsSectionProps {
@@ -179,6 +180,14 @@ export const StrengthsSection = ({ onImageClick, onPubClick }: StrengthsSectionP
                   description: "Notion add-on for AI-assisted writing",
                   pubId: "pub-litweaver-2024",
                   duration: 13.56
+                },
+                {
+                  gif: GifClustersense,
+                  title: "ClusterSense",
+                  venue: "TVCG 2025",
+                  description: "Interactive cluster analysis tool for exploratory data analysis",
+                  pubId: "pub-tvcg-2025",
+                  duration: 10.86
                 },
                 {
                   gif: GifPapers101,
