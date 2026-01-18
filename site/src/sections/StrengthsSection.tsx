@@ -5,8 +5,8 @@ import {
   GifClvp,
   GifLitweaver,
   ImageCitenetInterface,
-  ImageP101Interface,
   GifCrosslitAnalysis,
+  GifPapers101,
 } from "../data/images"
 
 interface StrengthsSectionProps {
@@ -181,12 +181,12 @@ export const StrengthsSection = ({ onImageClick, onPubClick }: StrengthsSectionP
                   duration: 13.56
                 },
                 {
-                  gif: ImageP101Interface,
+                  gif: GifPapers101,
                   title: "Papers101",
                   venue: "PacificVis 2021",
                   description: "Visual analytics system for paper search",
                   pubId: "pub-papers101-2021",
-                  duration: 5.0
+                  duration: 10.22
                 },
                 {
                   gif: ImageCitenetInterface,
