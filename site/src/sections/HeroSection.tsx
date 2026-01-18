@@ -12,7 +12,7 @@ export const HeroSection = () => {
           {/* Profile Photo + Name/Chips side by side */}
           <div className="flex gap-4 mb-6">
             {/* Profile Photo */}
-            <img src={ImageKrchoe} className="w-24 h-24 rounded-full object-cover flex-shrink-0" alt="Kiroong Choe" />
+            <img src={ImageKrchoe} className="w-24 h-24 rounded-lg object-cover flex-shrink-0" alt="Kiroong Choe" />
 
             {/* Name + Chips */}
             <div className="flex-1 flex flex-col justify-center">
@@ -81,7 +81,7 @@ export const HeroSection = () => {
           {/* Left Sidebar */}
           <div className="sm:w-[280px] md:w-[280px] lg:w-[280px] flex-shrink-0">
             {/* Profile Photo */}
-            <img src={ImageKrchoe} className="w-64 h-64 rounded-full object-cover mb-4" alt="Kiroong Choe" />
+            <img src={ImageKrchoe} className="w-64 h-64 rounded-lg object-cover mb-4" alt="Kiroong Choe" />
 
             {/* Name */}
             <h1 className="text-4xl mb-4">
