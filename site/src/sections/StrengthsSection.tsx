@@ -31,11 +31,13 @@ const SystemCarousel = ({ systems, onImageClick, onPubClick }: SystemCarouselPro
   const [currentIndex, setCurrentIndex] = useState(0)
   const [progress, setProgress] = useState(0)
   const [gifKey, setGifKey] = useState(0)
+  const [isGifLoaded, setIsGifLoaded] = useState(false)
 
   const goToNext = () => {
     setCurrentIndex((prev) => (prev === systems.length - 1 ? 0 : prev + 1))
     setProgress(0)
     setGifKey(prev => prev + 1)
+    setIsGifLoaded(false)
   }
 
   const handleSegmentClick = (index: number) => {
@@ -43,19 +45,27 @@ const SystemCarousel = ({ systems, onImageClick, onPubClick }: SystemCarouselPro
       // Same segment clicked - restart GIF
       setGifKey(prev => prev + 1)
       setProgress(0)
+      setIsGifLoaded(false)
     } else {
       // Different segment clicked
       setCurrentIndex(index)
       setProgress(0)
       setGifKey(prev => prev + 1)
+      setIsGifLoaded(false)
     }
+  }
+
+  const handleGifLoad = () => {
+    setIsGifLoaded(true)
   }
 
   const current = systems[currentIndex]
   const currentDuration = current.duration
 
-  // Auto-play functionality
+  // Auto-play functionality - only start when GIF is loaded
   useEffect(() => {
+    if (!isGifLoaded) return
+
     const interval = setInterval(() => {
       setProgress((prev) => {
         const newProgress = prev + (100 / (currentDuration * 10))
@@ -68,7 +78,7 @@ const SystemCarousel = ({ systems, onImageClick, onPubClick }: SystemCarouselPro
     }, 100)
 
     return () => clearInterval(interval)
-  }, [currentIndex, currentDuration])
+  }, [currentIndex, currentDuration, isGifLoaded])
 
   return (
     <div className="relative">
@@ -77,6 +87,7 @@ const SystemCarousel = ({ systems, onImageClick, onPubClick }: SystemCarouselPro
         className="w-full rounded-lg shadow-md cursor-pointer hover:shadow-lg transition-shadow"
         alt={`${current.title} demo`}
         onClick={() => onImageClick(current.gif)}
+        onLoad={handleGifLoad}
       />
 
       {/* System Info */}
@@ -167,14 +178,14 @@ export const StrengthsSection = ({ onImageClick, onPubClick }: StrengthsSectionP
             />
           </div>
 
-          {/* Right: Real-World Collaborations */}
+          {/* Right: Domain Collaborations */}
           <div>
             <h3 className="text-lg font-semibold mb-2 flex items-center gap-2">
               <span className="bg-gray-200 text-gray-700 text-sm px-2 py-0.5 rounded">2</span>
-              Real-World Collaborations
+              Domain Collaborations
             </h3>
             <p className="text-gray-700 mb-4">
-              <strong>Real-world work is messy, and I'm comfortable getting my hands dirty.</strong> I have collaborated with <strong>domain experts and practitioners</strong> to build meaningful products.
+              I have collaborated with <strong>domain experts and practitioners</strong> to understand their challenges and build practical solutions.
             </p>
 
             {/* Tab UI - xs/sm only */}
