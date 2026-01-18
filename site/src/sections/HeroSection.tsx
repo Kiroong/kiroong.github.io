@@ -128,17 +128,17 @@ export const HeroSection = () => {
             </p>
 
             {/* Research Focus 1: Visual Thinking */}
-            <div className="mb-6 overflow-auto">
-              <img src={ImageVision} className="rounded mx-auto xs:float-left xs:mr-4 xs:mb-2" style={{ width: '150px' }} alt="Research vision" />
-              <p className="text-gray-700 leading-relaxed">
+            <div className="mb-6 overflow-auto lg:flex lg:gap-4 lg:items-start">
+              <img src={ImageVision} className="rounded mx-auto xs:float-left xs:mr-4 xs:mb-2 lg:float-none lg:mx-0 lg:flex-shrink-0" style={{ width: '150px' }} alt="Research vision" />
+              <p className="text-gray-700 leading-relaxed lg:flex-1">
                 My research focuses on building <strong>interactive and intelligent systems</strong> for <strong className="text-blue-600">human visual thinking</strong>. Human thought is free, flexible, and intuitive—yet rigid data structures often fail to capture it. I focus primarily on supporting <strong>visual thinking</strong>, a way of understanding deeply natural to humans, that seamlessly supports human sensemaking.
               </p>
             </div>
 
             {/* Research Focus 2: Human Authorship */}
-            <div className="mb-8 overflow-auto">
-              <img src={ImageVision2} className="rounded mx-auto xs:float-left xs:mr-4 xs:mb-2" style={{ width: '150px' }} alt="Human authorship in creative work" />
-              <p className="text-gray-700 leading-relaxed">
+            <div className="mb-8 overflow-auto lg:flex lg:gap-4 lg:items-start">
+              <img src={ImageVision2} className="rounded mx-auto xs:float-left xs:mr-4 xs:mb-2 lg:float-none lg:mx-0 lg:flex-shrink-0" style={{ width: '150px' }} alt="Human authorship in creative work" />
+              <p className="text-gray-700 leading-relaxed lg:flex-1">
                 My research also focuses on designing <strong>human-AI collaborative systems</strong> that preserve <strong className="text-blue-600">human authorship</strong>. As AI systems increasingly participate in intellectual work, authorship is at stake. I design systems that support human sensemaking while preserving <strong>originality</strong>, <strong>accountability</strong>, and <strong>agency</strong>.
               </p>
             </div>
