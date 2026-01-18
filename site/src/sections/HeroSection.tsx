@@ -40,10 +40,10 @@ export const HeroSection = () => {
                   I'm actively seeking postdoctoral opportunities!
                 </span>
               </p>
-              <p className="text-sm text-amber-800">
-                I'm open to collaborations, research connections, and invitations to give talks.
-                Currently living in Boston, I welcome opportunities to visit institutions anywhere, including the US, Canada, Europe, and beyond.
-              </p>
+              <ul className="space-y-1 text-sm text-amber-800">
+                <li>• Open to collaborations, research connections, and talk invitations</li>
+                <li>• Currently based in Boston and happy to visit institutions worldwide</li>
+              </ul>
             </div>
 
             <div className="flex flex-wrap justify-center md:justify-start gap-2 text-sm">
