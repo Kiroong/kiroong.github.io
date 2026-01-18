@@ -1,5 +1,5 @@
 // Profile and UI Images
-export { default as ImageKrchoe } from "../figures/krchoe-2.png"
+export { default as ImageKrchoe } from "../figures/krchoe-4.jpeg"
 export { default as ImageVision } from "../figures/vision.png"
 export { default as ImageVision2 } from "../figures/vision2.png"
 
