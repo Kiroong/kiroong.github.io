@@ -1,6 +1,5 @@
 import { useState } from "react"
 import { HeroSection } from "./sections/HeroSection"
-import { ResearchFocusSection } from "./sections/ResearchFocusSection"
 import { StrengthsSection } from "./sections/StrengthsSection"
 import { PublicationsSection } from "./sections/PublicationsSection"
 import { ImageModal } from "./components/ImageModal"
@@ -21,7 +20,6 @@ const App = () => {
   return (
     <div className="bg-white min-h-screen">
       <HeroSection />
-      <ResearchFocusSection />
       <StrengthsSection
         onImageClick={setModalImage}
         onPubClick={scrollToPub}

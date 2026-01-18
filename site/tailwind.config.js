@@ -6,15 +6,20 @@ export default {
   ],
   theme: {
     screens: {
-      'md': '640px',
-      'lg': '1024px',
+      'xs': '576px',
+      'sm': '808px',
+      'md': '1000px',
+      'lg': '1160px',
     },
     extend: {
       fontFamily: {
         sans: ['Figtree', 'system-ui', 'sans-serif'],
       },
       maxWidth: {
-        '4xl': '896px',
+        'container-xs': '536px',
+        'container-sm': '768px',
+        'container-md': '960px',
+        'container-lg': '1120px',
       },
     },
   },

@@ -145,11 +145,11 @@ export const PublicationItem = ({
         </div>
       )}
       <div className="flex-1 min-w-0 -mt-1">
-        <p className="font-medium text-gray-800 leading-none m-0 p-0">{title}</p>
-        <p className="text-gray-500 text-sm mt-0.5" dangerouslySetInnerHTML={{ __html: formattedAuthors }} />
-        {venue && <p className="text-sm text-gray-500 mt-1" dangerouslySetInnerHTML={{ __html: venue }} />}
+        <p className="font-medium text-gray-800 leading-normal m-0 p-0">{title}</p>
+        <p className="text-gray-500 text-sm mt-1.5" dangerouslySetInnerHTML={{ __html: formattedAuthors }} />
+        {venue && <p className="text-sm text-gray-500 mt-1.5" dangerouslySetInnerHTML={{ __html: venue }} />}
         {hasLinks && (
-          <div className="flex items-center gap-2 mt-2 flex-wrap">
+          <div className="flex items-center gap-2 mt-1.5 flex-wrap">
             {renderLinks()}
           </div>
         )}

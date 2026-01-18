@@ -17,7 +17,7 @@ interface PublicationsSectionProps {
 export const PublicationsSection = ({ highlightedPub }: PublicationsSectionProps) => {
   return (
     <section className="py-12 border-t">
-      <div className="max-w-full md:max-w-3xl lg:max-w-4xl mx-auto px-5">
+      <div className="max-w-full xs:max-w-container-xs sm:max-w-container-sm md:max-w-container-md lg:max-w-container-lg mx-auto px-5">
         <h2 className="text-xl font-bold tracking-tight text-gray-400 uppercase mb-8">PUBLICATIONS</h2>
         <div className="space-y-4">
           {/* Working Projects */}
