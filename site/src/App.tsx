@@ -2,6 +2,7 @@ import { useState } from "react"
 import { HeroSection } from "./sections/HeroSection"
 import { StrengthsSection } from "./sections/StrengthsSection"
 import { PublicationsSection } from "./sections/PublicationsSection"
+import { FindingsSection } from "./sections/FindingsSection"
 import { ImageModal } from "./components/ImageModal"
 
 const App = () => {
@@ -25,6 +26,7 @@ const App = () => {
         onPubClick={scrollToPub}
       />
       <PublicationsSection highlightedPub={highlightedPub} />
+      <FindingsSection onPubClick={scrollToPub} />
 
       {/* Footer */}
       <footer className="py-8 bg-white border-t text-center text-sm text-gray-400">

@@ -157,6 +157,14 @@ export const StrengthsSection = ({ onImageClick, onPubClick }: StrengthsSectionP
                   duration: 14.9
                 },
                 {
+                  gif: GifCrosslitAnalysis,
+                  title: "Video Analysis for CrossLit User Study",
+                  venue: "CHI 2026",
+                  description: "Custom interface for analyzing think-aloud protocol sessions",
+                  pubId: "pub-crosslit-2026",
+                  duration: 10.0
+                },
+                {
                   gif: GifClvp,
                   title: "Chartvisor",
                   venue: "TVCG 2024",
@@ -171,6 +179,22 @@ export const StrengthsSection = ({ onImageClick, onPubClick }: StrengthsSectionP
                   description: "Notion add-on for AI-assisted writing",
                   pubId: "pub-litweaver-2024",
                   duration: 13.56
+                },
+                {
+                  gif: ImageP101Interface,
+                  title: "Papers101",
+                  venue: "PacificVis 2021",
+                  description: "Visual analytics system for paper search",
+                  pubId: "pub-papers101-2021",
+                  duration: 5.0
+                },
+                {
+                  gif: ImageCitenetInterface,
+                  title: "Citation Browser",
+                  venue: "VIS 2024",
+                  description: "Interactive visualization for exploring academic citation networks",
+                  pubId: "pub-citenet-2024",
+                  duration: 5.0
                 }
               ]}
               onImageClick={onImageClick}
