@@ -34,7 +34,10 @@ export const publications2026: Publication[] = [
     title: "CrossLit: Connecting Visual and Textual Sensemaking for Literature Review",
     authors: "Kiroong Choe, Eunhye Kim, Min Hyeong Kim, Suyeon Hwang, Sangwon Park, Nam Wook Kim, Jinwook Seo",
     venue: "ACM Conference on Human Factors in Computing Systems (<strong>ACM CHI 2026</strong>, Conditionally Accepted)",
-    thumbnail: "/publications/crosslit-2026-thumbnail.png"
+    thumbnail: "/publications/crosslit-2026-thumbnail.png",
+    links: [
+      { type: 'website', url: 'http://kiroong.github.io/CrossLit' }
+    ]
   },
   {
     title: "Good Fences Make Good Learning: How Self-Directed Language Learners Navigate LLM Delegation Decisions",
