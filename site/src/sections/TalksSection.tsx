@@ -18,7 +18,7 @@ export const TalksSection = () => {
     {
       venue: "BlendED",
       venueUrl: "https://www.blendedlearn.org/",
-      description: "AI+X On-Campus Experience program",
+      description: "AI+X On-Campus Experience Program",
       date: "Feb 2026",
     },
     {
