@@ -12,7 +12,7 @@ export const TalksSection = () => {
     {
       venue: "Carnegie Mellon University",
       lab: "Augmented Perception Lab",
-      host: "David Lindlbauer",
+      host: "Prof. David Lindlbauer",
       date: "Feb 2026",
     },
     {
@@ -23,7 +23,7 @@ export const TalksSection = () => {
     },
     {
       venue: "Tufts University",
-      host: "Remco Chang",
+      host: "Prof. Remco Chang",
       date: "Feb 2026",
     },
   ]
