@@ -1,6 +1,7 @@
 import { useState } from "react"
 import { HeroSection } from "./sections/HeroSection"
 import { StrengthsSection } from "./sections/StrengthsSection"
+import { TalksSection } from "./sections/TalksSection"
 import { PublicationsSection } from "./sections/PublicationsSection"
 import { FindingsSection } from "./sections/FindingsSection"
 import { ImageModal } from "./components/ImageModal"
@@ -25,6 +26,7 @@ const App = () => {
         onImageClick={setModalImage}
         onPubClick={scrollToPub}
       />
+      <TalksSection />
       <PublicationsSection highlightedPub={highlightedPub} />
       <FindingsSection onPubClick={scrollToPub} />
 
