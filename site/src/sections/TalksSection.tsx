@@ -10,6 +10,12 @@ interface Talk {
 export const TalksSection = () => {
   const talks: Talk[] = [
     {
+      venue: "University of Notre Dame",
+      host: "Prof. Toby Jia-Jun Li",
+      description: "Guest Lecture",
+      date: "Mar 2026",
+    },
+    {
       venue: "Carnegie Mellon University",
       lab: "Augmented Perception Lab",
       host: "Prof. David Lindlbauer",
@@ -36,10 +42,10 @@ export const TalksSection = () => {
           {talks.map((talk, idx) => (
             <li key={idx}>
               {talk.venueUrl ? (
-                <a href={talk.venueUrl} target="_blank" rel="noopener noreferrer" className="font-semibold text-gray-900 underline hover:text-blue-600 transition-colors">{talk.venue}</a>
+                <a href={talk.venueUrl} target="_blank" rel="noopener noreferrer" className="font-semibold text-gray-900 no-underline hover:underline hover:text-blue-600 transition-colors">{talk.venue}</a>
               ) : (
                 <span className="font-semibold text-gray-900">{talk.venue}</span>
-              )}{talk.lab && `, ${talk.lab}`}{talk.host ? `, hosted by ${talk.host}` : talk.description ? `, ${talk.description}` : ""} <span className="text-gray-400 text-sm ml-1">{talk.date}</span>
+              )}{talk.lab && `, ${talk.lab}`}{talk.description && `, ${talk.description}`}{talk.host && `, hosted by ${talk.host}`} <span className="text-gray-400 text-sm ml-1">{talk.date}</span>
             </li>
           ))}
         </ul>
