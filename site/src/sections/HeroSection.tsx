@@ -62,7 +62,7 @@ export const HeroSection = () => {
           <div className="mb-6">
             <h2 className="text-xl font-bold tracking-tight text-gray-400 uppercase mb-4">Latest News</h2>
             <ul className="space-y-1 text-gray-600">
-              <li>• Two papers conditionally accepted to <a href="https://chi2026.acm.org/" className="underline hover:text-gray-900">CHI 2026</a></li>
+              <li>• Two papers accepted to <a href="https://chi2026.acm.org/" className="underline hover:text-gray-900">CHI 2026</a>, one with Honourable Mention</li>
               <li>• Co-instructing <em>Human-AI Interaction</em> course led by Prof. Nam Wook Kim at Boston College</li>
             </ul>
           </div>
@@ -106,7 +106,7 @@ export const HeroSection = () => {
             <div className="mb-6">
               <p className="font-semibold text-gray-800 mb-2">Latest News</p>
               <ul className="space-y-1 text-gray-600">
-                <li>• Two papers conditionally accepted to <a href="https://chi2026.acm.org/" className="underline hover:text-gray-900">CHI 2026</a></li>
+                <li>• Two papers accepted to <a href="https://chi2026.acm.org/" className="underline hover:text-gray-900">CHI 2026</a>, one with Honourable Mention</li>
                 <li>• Co-instructing <em>Human-AI Interaction</em> course led by Prof. Nam Wook Kim at Boston College</li>
               </ul>
             </div>

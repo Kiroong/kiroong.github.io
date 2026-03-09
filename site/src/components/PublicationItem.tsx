@@ -1,4 +1,4 @@
-import { FiExternalLink, FiFileText, FiCode, FiMonitor, FiVideo, FiPlay, FiImage, FiUpload, FiGlobe } from "react-icons/fi"
+import { FiExternalLink, FiFileText, FiCode, FiMonitor, FiVideo, FiPlay, FiImage, FiUpload, FiGlobe, FiAward } from "react-icons/fi"
 
 interface LinkItem {
   url: string
@@ -11,6 +11,7 @@ interface PublicationItemProps {
   title: string
   authors: string
   venue?: string
+  award?: string
   doi?: string
   pdf?: string
   code?: string
@@ -26,6 +27,7 @@ export const PublicationItem = ({
   title,
   authors,
   venue,
+  award,
   doi,
   pdf,
   code,
@@ -147,7 +149,17 @@ export const PublicationItem = ({
       <div className="flex-1 min-w-0 -mt-1">
         <p className="font-medium text-gray-800 leading-normal m-0 p-0">{title}</p>
         <p className="text-gray-500 text-sm mt-1.5" dangerouslySetInnerHTML={{ __html: formattedAuthors }} />
-        {venue && <p className="text-sm text-gray-500 mt-1.5" dangerouslySetInnerHTML={{ __html: venue }} />}
+        {venue && (
+          <p className="text-sm text-gray-500 mt-1.5">
+            <span dangerouslySetInnerHTML={{ __html: venue }} />
+            {award && (
+              <span className="inline-flex items-baseline gap-1 text-amber-500 font-semibold ml-1.5" style={{ verticalAlign: 'baseline' }}>
+                <FiAward size={13} className="flex-shrink-0 self-center" />
+                <span>{award}</span>
+              </span>
+            )}
+          </p>
+        )}
         {hasLinks && (
           <div className="flex items-center gap-2 mt-1.5 flex-wrap">
             {renderLinks()}

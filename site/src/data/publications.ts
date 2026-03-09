@@ -10,6 +10,7 @@ export interface Publication {
   title: string
   authors: string
   venue?: string
+  award?: string
   doi?: string
   pdf?: string
   code?: string
@@ -33,7 +34,7 @@ export const publications2026: Publication[] = [
     id: "pub-crosslit-2026",
     title: "CrossLit: Connecting Visual and Textual Sensemaking for Literature Review",
     authors: "Kiroong Choe, Eunhye Kim, Min Hyeong Kim, Suyeon Hwang, Sangwon Park, Nam Wook Kim, Jinwook Seo",
-    venue: "ACM Conference on Human Factors in Computing Systems (<strong>ACM CHI 2026</strong>, Conditionally Accepted)",
+    venue: "ACM Conference on Human Factors in Computing Systems (<strong>ACM CHI 2026</strong>)",
     thumbnail: "/publications/crosslit-2026-thumbnail.png",
     links: [
       { type: 'website', url: 'http://kiroong.github.io/CrossLit' }
@@ -42,7 +43,8 @@ export const publications2026: Publication[] = [
   {
     title: "Good Fences Make Good Learning: How Self-Directed Language Learners Navigate LLM Delegation Decisions",
     authors: "Jiwon Song, Aeri Cho, Sihyeon Lee, Kiroong Choe, Jinwook Seo",
-    venue: "ACM Conference on Human Factors in Computing Systems (<strong>ACM CHI 2026</strong>, Conditionally Accepted)",
+    venue: "ACM Conference on Human Factors in Computing Systems (<strong>ACM CHI 2026</strong>)",
+    award: "Best Paper Honorable Mention Award",
     thumbnail: "/publications/goodfences-2026-thumbnail.png"
   }
 ]
