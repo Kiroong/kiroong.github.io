@@ -152,12 +152,12 @@ export const PublicationItem = ({
         {venue && (
           <p className="text-sm text-gray-500 mt-1.5">
             <span dangerouslySetInnerHTML={{ __html: venue }} />
-            {award && (
-              <span className="inline-flex items-baseline gap-1 text-amber-500 font-semibold ml-1.5" style={{ verticalAlign: 'baseline' }}>
-                <FiAward size={13} className="flex-shrink-0 self-center" />
-                <span>{award}</span>
+            {award && (<>
+              {' '}<span className="text-amber-500 font-semibold whitespace-nowrap" style={{ display: 'inline-block', position: 'relative', top: '-1px' }}>
+                <FiAward size={13} className="inline" style={{ verticalAlign: '-0.125em' }} />
+                {' '}<span style={{ position: 'relative', top: '0.5px' }}>{award}</span>
               </span>
-            )}
+            </>)}
           </p>
         )}
         {hasLinks && (
