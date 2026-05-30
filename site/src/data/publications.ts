@@ -37,6 +37,7 @@ export const publications2026: Publication[] = [
     venue: "ACM Conference on Human Factors in Computing Systems (<strong>ACM CHI 2026</strong>)",
     thumbnail: "/publications/crosslit-2026-thumbnail.png",
     links: [
+      { type: 'paper', url: 'https://dl.acm.org/doi/full/10.1145/3772318.3791418' },
       { type: 'website', url: 'http://kiroong.github.io/CrossLit' }
     ]
   },
@@ -45,7 +46,19 @@ export const publications2026: Publication[] = [
     authors: "Jiwon Song, Aeri Cho, Sihyeon Lee, Kiroong Choe, Jinwook Seo",
     venue: "ACM Conference on Human Factors in Computing Systems (<strong>ACM CHI 2026</strong>)",
     award: "Best Paper Honorable Mention Award",
-    thumbnail: "/publications/goodfences-2026-thumbnail.png"
+    thumbnail: "/publications/goodfences-2026-thumbnail.png",
+    links: [
+      { type: 'paper', url: 'https://dl.acm.org/doi/full/10.1145/3772318.3791657' }
+    ]
+  },
+  {
+    title: "Physical Containers as Framing Conditions for Visualization in Augmented Reality",
+    authors: "Jiyeon Bae, Mingyu An, Jeongin Park, Seokweon Jung, Kiroong Choe, Jinwook Seo",
+    venue: "IEEE Pacific Visualization Conference (<strong>PacificVis 2026 Poster</strong>), Best Poster Award",
+    thumbnail: "/publications/physical-containers-2026-thumbnail.png",
+    links: [
+      { type: 'paper', url: 'https://arxiv.org/abs/2603.21637' }
+    ]
   }
 ]
 

@@ -10,6 +10,18 @@ interface Talk {
 export const TalksSection = () => {
   const talks: Talk[] = [
     {
+      venue: "Carnegie Mellon University",
+      lab: "DIG Lab",
+      host: "Prof. Adam Perer",
+      date: "Apr 2026",
+    },
+    {
+      venue: "Harvard University",
+      lab: "HIDIVE Lab",
+      host: "Prof. Nils Gehlenborg",
+      date: "Apr 2026",
+    },
+    {
       venue: "University of Notre Dame",
       host: "Prof. Toby Jia-Jun Li",
       description: "Guest Lecture",

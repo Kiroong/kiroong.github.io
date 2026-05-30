@@ -66,14 +66,6 @@ export const HeroSection = () => {
               <li>• Co-instructing <em>Human-AI Interaction</em> course led by Prof. Nam Wook Kim at Boston College</li>
             </ul>
           </div>
-
-          {/* Postdoc Callout - Mobile */}
-          <div className="border-l-4 border-amber-500 bg-gradient-to-r from-amber-50 to-transparent pl-4 pr-6 py-4 rounded-r">
-            <p className="font-semibold text-gray-900 mb-2">I'm actively seeking postdoctoral opportunities!</p>
-            <p className="text-sm text-gray-700 leading-relaxed">
-              I'm open to collaborations, research connections, and talk invitations. Currently based in Boston and happy to visit institutions worldwide.
-            </p>
-          </div>
         </div>
 
         {/* Desktop Layout - sm+ */}
@@ -110,14 +102,6 @@ export const HeroSection = () => {
                 <li>• Co-instructing <em>Human-AI Interaction</em> course led by Prof. Nam Wook Kim at Boston College</li>
               </ul>
             </div>
-
-            {/* Postdoc Callout - Sidebar version (xs/sm only) */}
-            <div className="md:hidden border-l-4 border-amber-500 bg-gradient-to-r from-amber-50 to-transparent pl-4 pr-4 py-3 rounded-r">
-              <p className="font-semibold text-gray-900 mb-1 text-sm">I'm actively seeking postdoctoral opportunities!</p>
-              <p className="text-xs text-gray-700 leading-relaxed">
-                I'm open to collaborations, research connections, and talk invitations. Currently based in Boston and happy to visit institutions worldwide.
-              </p>
-            </div>
           </div>
 
           {/* Right Content */}
@@ -140,14 +124,6 @@ export const HeroSection = () => {
               <img src={ImageVision2} className="rounded mx-auto xs:float-left xs:mr-4 xs:mb-2 lg:float-none lg:mx-0 lg:flex-shrink-0" style={{ width: '150px' }} alt="Human authorship in creative work" />
               <p className="text-gray-700 leading-relaxed lg:flex-1">
                 My research also focuses on designing <strong>human-AI collaborative systems</strong> that preserve <strong className="text-blue-600">human authorship</strong>. As AI systems increasingly participate in intellectual work, authorship is at stake. I design systems that support human sensemaking while preserving <strong>originality</strong>, <strong>accountability</strong>, and <strong>agency</strong>.
-              </p>
-            </div>
-
-            {/* Postdoc Callout - Main content version (md/lg) */}
-            <div className="hidden md:block border-l-4 border-amber-500 bg-gradient-to-r from-amber-50 to-transparent pl-4 pr-6 py-4 rounded-r clear-left">
-              <p className="font-semibold text-gray-900 mb-2">I'm actively seeking postdoctoral opportunities!</p>
-              <p className="text-sm text-gray-700 leading-relaxed">
-                I'm open to collaborations, research connections, and talk invitations. Currently based in Boston and happy to visit institutions worldwide.
               </p>
             </div>
           </div>
